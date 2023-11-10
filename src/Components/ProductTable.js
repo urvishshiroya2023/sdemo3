@@ -13,7 +13,6 @@ const ProductTable = ({ item }) => {
             <div className="col-1 text-center">{item.category}</div>
             <div className="col-3 text-center"><img className='thumbimg' src={item.thumbnail} alt='productimg' /></div>
         </div>
-
     )
 }
 
