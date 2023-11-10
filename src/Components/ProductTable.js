@@ -2,9 +2,7 @@ import React from 'react'
 
 const ProductTable = ({ item }) => {
     return (
-
-
-        <div class="row mt-3 align-items-center text-black">
+        <div className="row mt-3 align-items-center text-black">
             <div className="col-1 text-center">{item.title}</div>
             <div className="col-2 text-center">{item.description}</div>
             <div className="col-1 text-center">{item.price}</div>
