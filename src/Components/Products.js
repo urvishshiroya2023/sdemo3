@@ -39,7 +39,7 @@ const Products = () => {
 
     return (
         <div>
-            <div>
+            <div className='container'>
                 <div className='d-flex justify-content-between'>
 
                     <input
@@ -55,7 +55,7 @@ const Products = () => {
                     </select>
                 </div>
 
-                <table>
+                {/* <table>
                     <thead>
                         <tr>
                             <th>Title</th>
@@ -76,9 +76,28 @@ const Products = () => {
                             </Link>
                         ))}
                     </tbody>
-                </table>
+                </table> */}
 
-
+                <div className='mt-3'>
+                    <div className='row'>
+                        <div class="col-1">Title</div>
+                        <div class="col-1">Description</div>
+                        <div class="col-1">Price</div>
+                        <div class="col-1">Discount</div>
+                        <div class="col-1">Rating</div>
+                        <div class="col-1">Stock</div>
+                        <div class="col-1">Brand</div>
+                        <div class="col-1">Category</div>
+                        <div class="col-1">Image</div>
+                    </div>
+                    <div className='mt-3 ' >
+                        {filteredProducts.map((item) => (
+                            <Link className='text-decoration-none' to={`/products/${item.id}`} key={item.id}>
+                                <ProductTable item={item} />
+                            </Link>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );
