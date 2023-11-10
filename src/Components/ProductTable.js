@@ -2,30 +2,18 @@ import React from 'react'
 
 const ProductTable = ({ item }) => {
     return (
-        // <tbody>
-        //     <tr>
-        //         <th>{item.title}</th>
-        //         <th>{item.description}</th>
-        //         <th>{item.price}</th>
-        //         <th>{item.discountPercentage}</th>
-        //         <th>{item.rating}</th>
-        //         <th>{item.stock}</th>
-        //         <th>{item.brand}</th>
-        //         <th>{item.category}</th>
-        //         <th><img src={item.thumbnail} alt='productimg' /></th>
-        //     </tr>
 
-        // </tbody>
-        <div class="row mt-3">
-            <div class="col-1">{item.title}</div>
-            <div class="col-1">{item.description}</div>
-            <div class="col-1">{item.price}</div>
-            <div class="col-1">{item.discountPercentage}</div>
-            <div class="col-1">{item.rating}</div>
-            <div class="col-1">{item.stock}</div>
-            <div class="col-1">{item.brand}</div>
-            <div class="col-1">{item.category}</div>
-            <div class="col-4"><img className='img-fluid' src={item.thumbnail} alt='productimg' /></div>
+
+        <div class="row mt-3 align-items-center text-black">
+            <div className="col-1 text-center">{item.title}</div>
+            <div className="col-2 text-center">{item.description}</div>
+            <div className="col-1 text-center">{item.price}</div>
+            <div className="col-1 text-center">{item.discountPercentage}</div>
+            <div className="col-1 text-center">{item.rating}</div>
+            <div className="col-1 text-center">{item.stock}</div>
+            <div className="col-1 text-center">{item.brand}</div>
+            <div className="col-1 text-center">{item.category}</div>
+            <div className="col-3 text-center"><img className='thumbimg' src={item.thumbnail} alt='productimg' /></div>
         </div>
 
     )
