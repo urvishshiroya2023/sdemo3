@@ -26,19 +26,19 @@ const ProductDetail = () => {
             <h2 className='fs-4'>Product Detail</h2>
             {products ? (
                 <div className='mt-5'>
-                    <p>Title : {products.title}</p>
-                    <p>Brand : {products.brand}</p>
-                    <p>Description : {products.description}</p>
-                    <p>Price : {products.price}/- only</p>
-                    <p>Discount : {products.discountPercentage} <span className='text-danger'>% off!</span> </p>
-                    <p>Category : {products.category}</p>
-                    <p>Stock : {products.stock} <span className='text-success'>left!!</span> </p>
+                    <p>Title : {products?.title}</p>
+                    <p>Brand : {products?.brand}</p>
+                    <p className=''>Description : {products?.description}</p>
+                    <p>Price : {products?.price}/- only</p>
+                    <p>Discount : {products?.discountPercentage} <span className='text-danger'>% off!</span> </p>
+                    <p>Category : {products?.category}</p>
+                    <p>Stock : {products?.stock} <span className='text-success'>left!!</span> </p>
                     <div>
                         <p>Product Images:</p>
                         <div className='row justify-content-between'>
-                            {products.images.map((item, index) => (
+                            {products?.images.map((item, index) => (
                                 <div className='col-3 mt-3' key={index}>
-                                    <img className='thumbimg' src={item} alt='productsubimage' />
+                                    <img className='thumbimg rounded' src={item} alt='productsubimage' />
                                 </div>
                             ))}
                         </div>

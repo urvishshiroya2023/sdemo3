@@ -60,7 +60,6 @@ const Products = () => {
                     </select>
                 </div>
 
-
                 <div className='mt-3'>
                     <div className='row'>
                         <div className="col-1 text-center fs-5">Title</div>
